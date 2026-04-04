@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<style>
+  .verso-wrap { max-width: 600px; margin: 0 auto; padding: 5rem 2rem 6rem; text-align: center; }
+  .verso-meta { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; }
+  .verso-titulo { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 300; font-style: italic; line-height: 1.3; margin-bottom: 1.5rem; }
+  .verso-divider { width: 40px; height: 1px; background: var(--gold); margin: 0 auto 3rem; }
+  .verso-cuerpo { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 300; line-height: 2; color: var(--ink-light); white-space: pre-line; }
+  .back-link { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-muted); text-decoration: none; margin-bottom: 3rem; transition: color 0.2s; }
+  .back-link:hover { color: var(--gold); }
+</style>
+<div class="verso-wrap">
+  <a href="/versos/" class="back-link">← Todos los versos</a>
+  <p class="verso-meta">{{ page.date | date: "%d %b %Y" }}</p>
+  <h1 class="verso-titulo">{{ page.title }}</h1>
+  <div class="verso-divider"></div>
+  <div class="verso-cuerpo">{{ content }}</div>
+</div>
