@@ -1,0 +1,27 @@
+title: José Manuel Gómez Hernández
+description: Escritor, poeta y redactor deportivo
+url: "https://www.jmgh.es"
+baseurl: ""
+
+permalink: /:categories/:slug/
+
+collections:
+  versos:
+    output: true
+    permalink: /versos/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "articulo"
+  - scope:
+      path: ""
+      type: "versos"
+    values:
+      layout: "verso"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
