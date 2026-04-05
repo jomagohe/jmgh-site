@@ -1,0 +1,6 @@
+[build]
+  command = "gem install jekyll jekyll-feed jekyll-seo-tag && jekyll build"
+  publish = "_site"
+
+[build.environment]
+  RUBY_VERSION = "3.2.0"
